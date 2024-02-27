@@ -25,7 +25,7 @@ for i in range(n) : #n회만큼 반복
         star5 = random.choices([0,1], weights) #1~73스택, 랜덤으로 뽑기. 안뽑혔으면 변수에 0 저장, 뽑혔으면 변수에 1 저장. (리스트 형태)
         summon_stack += 1 #한번 뽑았으니 스택에 1 추가
         if star5[0] == 1 : #만약에 변수에 1이 저장됐으면 (5성이 뽑혔으면)
-            list_of_summonstack.append(summon_stack) # 13번 줄에 있던 변수에 스택을 저장시킴
+            list_of_summonstack.append(summon_stack) # 15번 줄에 있던 변수에 스택을 저장시킴
             summon_stack = 0 # 다음 뽑기를 위해 스택 초기화
             no_chance = 99.4 # 다음 뽑기를 위해 확률 초기화
             yes_chance = 0.6 # 다음 뽑기를 위해 확률 초기화
@@ -37,14 +37,14 @@ for i in range(n) : #n회만큼 반복
         star5 = random.choices([0,1], weights) #랜덤으로 뽑기. 안뽑혔으면 변수에 0 저장, 뽑혔으면 변수에 1 저장.
         summon_stack += 1 #한번 뽑았으니 스택에 1 추가
         if star5[0] == 1 : #만약에 변수에 1이 저장됐으면
-            list_of_summonstack.append(summon_stack) # 13번 줄에 있던 변수에 스택을 저장시킴
+            list_of_summonstack.append(summon_stack) # 15번 줄에 있던 변수에 스택을 저장시킴
             summon_stack = 0 # 다음 뽑기를 위해 스택 초기화
             no_chance = 99.4 # 다음 뽑기를 위해 확률 초기화
             yes_chance = 0.6 # 다음 뽑기를 위해 확률 초기화   
             break #while 코드 탈출(처음부터 뽑기 시작)
     while summon_stack == 89 : #89스택일때 즉 ---> 90번째 뽑기 (무조건 5성 확정)
         summon_stack += 1 #한번 뽑았으니 스택에 1 추가
-        list_of_summonstack.append(summon_stack) # 13번 줄에 있던 변수에 스택을 저장시킴
+        list_of_summonstack.append(summon_stack) # 15번 줄에 있던 변수에 스택을 저장시킴
         summon_stack = 0 # 다음 뽑기를 위해 스택 초기화
         no_chance = 99.4 # 다음 뽑기를 위해 확률 초기화
         yes_chance = 0.6 # 다음 뽑기를 위해 확률 초기화
